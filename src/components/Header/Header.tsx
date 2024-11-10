@@ -18,42 +18,39 @@ const Header = () => {
     href: string;
   };
   const navLinks: NavRoute[] = [
-    { name: "Courses", href: "/courses" },
     { name: "Docs", href: "/docs" },
+    { name: "Courses", href: "/courses" },
   ];
 
   return (
     <>
-      <header className="dark:bg-[#1c4463] bg-[#9DB2BF] dark:text-white text-black">
+      <header className="dark:bg-[#111111] bg-[#F8F8F8] dark:text-[#FFFFFF] text-[#000000] shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo or Brand Name */}
-          <div className=" flex items-center space-x-2 text-2xl font-bold">
+          <Link href="/">
             <img
               src="/BrandIcon.png"
               alt="logo"
               height={"100px"}
               width={"150px"}
+              className="mb-3"
             />{" "}
-            <span>Docs</span>
-          </div>
-
+          </Link>
           {/* Theme Toggle */}
           <div className="md:hidden block">
             <ToggleTheme />
           </div>
-
           {/* Mobile Menu Icon - Visible only on small screens */}
           <div className="flex md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-gray-300 focus:outline-none text-2xl"
+              className="dark:text-[#FFFFFF] dark:hover:text-[#CCCCCC] focus:outline-none text-2xl"
             >
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-
           {/* Desktop Navigation Links - Visible on md and larger screens */}
-          <nav className="hidden md:flex gap-8 text-lg">
+          <nav className="hidden md:flex gap-8 text-lg font-semibold">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
@@ -74,11 +71,11 @@ const Header = () => {
       <div
         className={`md:hidden ${
           isOpen ? "block" : "hidden"
-        } pt-10 bg-[#27374D] rounded-2xl w-48  `}
+        } m-2 fixed top-15 left-0 right-0 `}
       >
-        <nav className="flex flex-col gap-4 text-xl p-4">
+        <nav className="flex flex-col font-semibold gap-4 text-xl py-4  items-center dark:bg-[#1A1A1A] dark:shadow-[#FFFFFF1A] shadow-[#0000001A] bg-[#FFFFFF] dark:text-[#FFFFFF] text-[#000000] rounded-2xl border-2 border-[#DDDDDD] dark:border-[#333333]">
           {navLinks.map((link, index) => (
-            <Link key={index} href={link.href} className="hover:text-gray-300">
+            <Link key={index} href={link.href} className="hover:text-gray-300 ">
               {link.name}
             </Link>
           ))}

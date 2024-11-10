@@ -21,8 +21,11 @@ const ToggleTheme = () => {
     }
   }, [darkMode]);
   return (
-    <div className="text-2xl" onClick={() => setDarkMode(!darkMode)}>
-      {darkMode ? <MdSunny /> : <FaMoon />}
+    <div
+      className="dark:bg-[#333333] bg-[#F8F8F8] border-2 border-[#DDDDDD] p-2 rounded-xl hover:text-[#666666]  dark:hover:text-[#AAAAAA] focus:outline-none text-2xl"
+      onClick={() => setDarkMode(!darkMode)}
+    >
+      {darkMode ? <FaMoon /> : <MdSunny />}
     </div>
   );
 };
