@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import LandingCodingJourney from "@/components/Main/LandingCodingJourney";
 import LandingImageOfTeachers from "@/components/Main/LandingImageOfTeachers";
 import LandingIntro from "@/components/Main/LandingIntro";
@@ -12,6 +13,7 @@ const page = () => {
         <LandingCodingJourney/>
         <LandingYoutubeLinkButton/>
         <LandingImageOfTeachers/>
+        <Footer/>
        
       </div>
     </>

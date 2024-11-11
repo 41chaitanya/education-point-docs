@@ -2,35 +2,35 @@ import React from "react";
 import Image from "next/image";
 
 const LandingImageOfTeachers = () => {
-  const imageClassTCSS = "aspect-square scale-75 rounded-full ";
-  const nameClassTCSS = "text-center text-2xl";
+  // const imageClassTCSS = "aspect-square scale-75 rounded-full ";
+  const imageClassTCSS =
+    "aspect-square scale-75 rounded-full border-8 shadow-lg hover:scale-90 transition-all duration-300 translate-y-6  ";
+
+  const nameClassTCSS =
+    "text-center text-2xl   dark:text-[#FFFFFF] text-[#000000]  ";
+  const LanguageClassTCSS =
+    "text-2xl  text-center mt-5 dark:text-[#CCCCCC] text-[#333333] ";
   return (
-    <div>
-      {/* <Image
-        src="" // External image URL
-        alt="A descriptive alt text for the image"
-        width={500} // Width of the image
-        height={300} // Height of the image
-        className={`${imageClassTCSS}`}
-      /> */}
-      <img
-        src="https://www.looper.com/img/gallery/what-only-british-fans-of-the-boys-notice-about-billy-butcher/l-intro-1614788163.jpg"
-        alt=""
-        className={`${imageClassTCSS}`}
-      />
-      <h1 className={`${nameClassTCSS} `}>william butcher</h1>
-      <img
-        src="https://i.tribune.com.pk/media/images/Screen-Shot-2024-06-23-at-1-41-38-PM1719132368-0/Screen-Shot-2024-06-23-at-1-41-38-PM1719132368-0.png"
-        alt=""
-        className={`${imageClassTCSS}`}
-      />
-      <h1 className={`${nameClassTCSS} `}>homelander</h1>
-      <img
-        src="https://i.pinimg.com/564x/b0/46/53/b046534afb5ff539f8cf3b26613c793b.jpg"
-        alt=""
-        className={`${imageClassTCSS}`}
-      />
-      <h1 className={`${nameClassTCSS} `}>soilder boy</h1>
+    <div className="lg:flex">
+      <div>
+        <img src="/SachinKumar.jpeg" alt="" className={`${imageClassTCSS}`} />
+        <h1 className={`${nameClassTCSS} `}>Mr.Sachin Kumar</h1>
+        <h2 className={`${LanguageClassTCSS} `}>( C++ )</h2>
+      </div>
+      <div>
+        <img src="/AdityaPatil.jpeg" alt="" className={`${imageClassTCSS}`} />
+        <h1 className={`${nameClassTCSS} `}>Mr.Aditya Patil</h1>
+        <h2 className={`${LanguageClassTCSS} `}>( Python )</h2>
+      </div>
+      <div>
+        <img
+          src="/ChaitanyaSharma.jpeg"
+          alt=""
+          className={`${imageClassTCSS}`}
+        />
+        <h1 className={`${nameClassTCSS} `}>Mr.Chaitanya Sharma</h1>
+        <h2 className={`${LanguageClassTCSS} `}>( Java )</h2>
+      </div>
     </div>
   );
 };
