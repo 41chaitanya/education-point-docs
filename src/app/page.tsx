@@ -1,8 +1,8 @@
 import Footer from "@/components/Footer/Footer";
-import LandingCodingJourney from "@/components/Main/LandingCodingJourney";
-import LandingImageOfTeachers from "@/components/Main/LandingImageOfTeachers";
-import LandingIntro from "@/components/Main/LandingIntro";
-import LandingYoutubeLinkButton from "@/components/Main/LandingYoutubeLinkButton";
+import LandingCodingJourney from "@/components/Main/Hero/LandingCodingJourney";
+import LandingImageOfTeachers from "@/components/Main/Hero/LandingImageOfTeachers";
+import LandingIntro from "@/components/Main/Hero/LandingIntro";
+import LandingYoutubeLinkButton from "@/components/Main/Hero/LandingYoutubeLinkButton";
 import React from "react";
 
 const page = () => {

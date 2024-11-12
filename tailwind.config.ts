@@ -9,6 +9,14 @@ export default {
   darkMode: "class",
   theme: {
     extend: { fontFamily: { custom1: ["Roboto Slab","serif"] } },
+    screens:{
+      'sm':'500px',
+      'md':'630px',
+      'lg':'890px',
+      'xl':'1140px',
+      '2xl':'1390px',
+      'iconResponce':'1230px'
+    }
   },
   plugins: [],
 } satisfies Config;

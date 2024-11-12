@@ -1,5 +1,5 @@
+import HeroIconsCollection from "@/components/Utility/HeroIconsCollection";
 import React from "react";
-import HeroIconsCollection from "../Utility/HeroIconsCollection";
 
 const LandingIntro = () => {
   return (
@@ -11,7 +11,6 @@ const LandingIntro = () => {
           <div className="py-2"> with</div>
           <div className="py-2"> Education Point</div>
         </h1>
-        <div className="lg:block hidden"><HeroIconsCollection/></div>
         <p className="text-md  text-center mt-5 dark:text-[#CCCCCC] text-[#333333] lg:text-left  lg:mx-60 lg:w-[500px]   ">
           Unlock your coding potential with Education Point. Whether you're a
           beginner or looking to sharpen your skills, our platform offers a
@@ -20,9 +19,11 @@ const LandingIntro = () => {
           building your future today.
         </p>
       </div>
+      <div className="hidden lg:block">
+        <HeroIconsCollection/>
+      </div>
     </>
   );
-
 };
 
 export default LandingIntro;
