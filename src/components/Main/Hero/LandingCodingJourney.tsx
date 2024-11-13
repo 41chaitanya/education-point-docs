@@ -18,7 +18,7 @@ const LandingCodingJourney = () => {
             – Education Point Team
           </h2>
       </div>
-      <div className="iconResponce:block hidden xl:w-52 xl:absolute top-[490px] right-[220px]">
+      <div className="iconResponce:block  hidden xl:w-52 xl:absolute top-[490px] right-[220px]">
         <img
           src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/b0bc916b_0829_48d0_b214_f3e8a0a35bc8.jpeg"
           className="transition-all duration-300 translate-y-6 border-2 rounded-full shadow-lg aspect-square hover:scale-90 "

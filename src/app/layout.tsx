@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 export default function RootLayout({
@@ -10,6 +11,7 @@ export default function RootLayout({
       <body className="dark:bg-[#1A1A1A] bg-[#FFFFFF] dark:text-[#FFFFFF] text-[#000000]">
         <Header/>
         {children}
+        <Footer/>
         </body>
     </html>
   );
